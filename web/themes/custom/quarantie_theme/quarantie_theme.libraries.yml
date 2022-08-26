@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      css/style-51.css: { }
+      css/style.css: {}

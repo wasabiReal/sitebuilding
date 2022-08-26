@@ -1,0 +1,23 @@
+{
+  "name": "quarantie_theme",
+  "version": "1.0.0",
+  "description": "[Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wasabi",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "global": "^4.4.0",
+    "gulp-cli": "^2.3.0"
+  }
+}
