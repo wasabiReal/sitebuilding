@@ -1,0 +1,90 @@
+.view-about-block > .view-content > .views-row{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 16px 0;
+  text-transform: uppercase;
+  width: 100%;
+
+  .views-field{
+    display: flex;
+    align-items: center;
+  }
+
+  .views-field-title{
+    color: $darkblue;
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  .views-field-body{
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    color: $graytext;
+    font-size: 17px;
+    margin-left: 15px;
+  }
+
+  .views-field-view-node{
+    background-color: $blue;
+    span{
+      display: flex;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  &:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: $darkblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &:after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: $blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.page-node-type-about-block{
+  main{
+    margin: 55px auto;
+    .block-page-title-block{
+      h1{
+        font-weight: 600;
+        font-size: 2.69em;
+        @include before-after-for-h ;
+      }
+
+    }
+
+    .node__content p{
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+    .text-formatted {
+      display: block;
+    }
+    img{
+      margin-right: $gutter;
+      margin-bottom: 15px;
+    }
+    .block-system-main-block{
+      margin-top: $gutter;
+    }
+  }
+}

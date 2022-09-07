@@ -1,0 +1,154 @@
+// Added mixin for lines around every title like "Services" etc.
+body.path-frontpage {
+  h2 {
+    text-align: center;
+    @include before-after-for-h ;
+  }
+}
+
+// Styles for Services Block on Homepage
+.block-views-blockservises-block-1 {
+  margin-bottom: $gutterX;
+
+  .view-content {
+    text-align: center;
+    text-transform: uppercase;
+
+    .view-content {
+    }
+
+
+    .views-field-field-servise-image img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .views-field-title {
+      margin-top: $gutter;
+      font-size: 1.5em;
+    }
+
+    .views-field-body {
+      margin-top: 20px;
+      color: $graytext;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .views-field-view-node a {
+      text-decoration: none;
+      padding: 7px;
+      background-color: $blue;
+      color: white;
+      font-weight: 300;
+    }
+  }
+}
+
+// Styles for Projects Block on Homepage
+.block-views-blockproject-block-1 {
+  position: relative;
+
+  .view-content {
+    justify-content: space-between;
+
+    .views-row {
+      background-color: white;
+      text-align: center;
+      text-transform: uppercase;
+      height: 440px;
+      border-bottom: 1px solid $darkblue;
+
+      a {
+        text-decoration: none;
+      }
+
+      .views-field-title {
+        font-size: 1.6em;
+        color: $darkblue;
+        font-weight: 300;
+        margin-top: 20px;
+      }
+
+      .views-field-term-node-tid {
+        font-weight: 400;
+      }
+
+      .views-field-view-node {
+        margin-top: 20px;
+
+        a {
+          padding: 8px;
+          background-color: $darkblue;
+          color: white;
+          font-weight: 300;
+        }
+      }
+
+      .views-field-term-node-tid a[href$='7'] {
+        color: #1bbc9b;
+      }
+
+      .views-field-term-node-tid a[href$='8'] {
+        color: #9b58b5;
+      }
+
+      .views-field-term-node-tid a[href$='9'] {
+        color: #32ade1;
+      }
+
+      .views-field-term-node-tid a[href$='10'] {
+        color: #e84c3d;
+      }
+    }
+  }
+
+  .contextual-region {
+    position: relative;
+    margin-bottom: $gutterXXX;
+
+    &:after {
+      content: "";
+      background-image: url(../images/bc_proj.jpg);
+      position: absolute;
+      width: 154%;
+      top: -30px;
+      left: -27%;
+      height: 135%;
+      opacity: 0.35;
+      z-index: -2;
+    }
+  }
+
+  nav {
+    .page-link {
+      border: 0px;
+      border-top-left-radius: 50% !important;
+      border-bottom-left-radius: 50% !important;
+      color: $darkblue !important;
+    }
+
+    li.is-active a, li.active a {
+      background-color: #dddcdd !important;
+      border-color: #dddcdd !important;
+      border-radius: 50%;
+    }
+
+    ul a {
+      background-color: transparent;
+      color: black;
+
+      &:hover {
+        z-index: 2;
+        background-color: $silver;
+        border-color: $silver;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// Styles for Block with team members on Homepage
+.block-views-blockour-team-block-1 {
+
+}

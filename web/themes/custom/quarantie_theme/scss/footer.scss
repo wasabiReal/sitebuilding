@@ -1,0 +1,19 @@
+footer{
+  background-color: $darkblue;
+}
+footer .region-footer{
+  width: $wrap;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .site-title{
+    color: $blue;
+  }
+  .site-slogan{
+    color: white;
+  }
+  .social-media-links--platforms > li > a{
+    color: $blue;
+  }
+}

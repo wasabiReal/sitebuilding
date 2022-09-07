@@ -5,11 +5,18 @@
 // @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
 @import 'variables_bootstrap';
 
+// My files styles
+@import "variables";
+@import "mixins.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "main.scss";
+@import "projects.scss";
+@import "contact.scss";
+@import "about.scss";
+@import "homepage.scss";
+
 
 body{
   color: black;
-}
-h2{
-  font-weight: 100;
-  font-size: 50px;
 }
