@@ -7,7 +7,7 @@
     position: absolute;
     width: 43.5%;
     height: 1px;
-    top: 25px;
+    top: 19px;
     background-color: $graytext;
     opacity: 0.6;
   }
@@ -16,5 +16,22 @@
   }
   &:after {
     right: 0;
+  }
+}
+
+@mixin background-45deg-lines {
+  position: relative;
+  margin-bottom: $gutterXXX;
+
+  &:after {
+    content: "";
+    background-image: url(../images/bc_proj.jpg);
+    position: absolute;
+    width: 154%;
+    top: 50px;
+    left: -27%;
+    height: 113%;
+    opacity: 0.35;
+    z-index: -2;
   }
 }

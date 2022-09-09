@@ -1,10 +1,69 @@
-.path-projects{
+body.path-projects{
   .view-project{
     text-align: center;
     .view-content{
       margin: 50px 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      gap: 55px;
+      .views-row {
+        background-color: white;
+        text-align: center;
+        text-transform: uppercase;
+        height: 443px;
+        border-bottom: 1px solid $darkblue;
+        -webkit-box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.75);
+        box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.75);
+
+        a {
+          text-decoration: none;
+        }
+        .views-field-field-image{
+          margin-top: $gutter;
+        }
+        .views-field-title {
+          font-size: 1.3em;
+          color: $darkblue;
+          font-weight: 300;
+          margin-top: 10px;
+        }
+
+        .views-field-term-node-tid {
+          font-weight: 400;
+          a{
+            font-size: 0.9em;
+          }
+        }
+
+        .views-field-view-node {
+          margin-top: $gutterS;
+
+          a {
+            padding: 7px;
+            background-color: $darkblue;
+            color: white;
+            font-weight: 300;
+            font-size: 0.85em;
+          }
+        }
+
+        .views-field-term-node-tid a[href$='7'] {
+          color: #1bbc9b;
+        }
+
+        .views-field-term-node-tid a[href$='8'] {
+          color: #9b58b5;
+        }
+
+        .views-field-term-node-tid a[href$='9'] {
+          color: #32ade1;
+        }
+
+        .views-field-term-node-tid a[href$='10'] {
+          color: #e84c3d;
+        }
+      }
     }
   }
 }

@@ -1,8 +1,9 @@
 footer{
   background-color: $darkblue;
+  height: 196px;
 }
 footer .region-footer{
-  width: $wrap;
+  width: $wrap+50px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -15,5 +16,16 @@ footer .region-footer{
   }
   .social-media-links--platforms > li > a{
     color: $blue;
+  }
+  .block-system-branding-block{
+    margin-top: 44px;
+    margin-left: 27px;
+    .site-slogan{
+      margin-top: -7px;
+      letter-spacing: 0.8px;
+    }
+  }
+  .block-social-media-links-block{
+    margin-top: 55px;
   }
 }

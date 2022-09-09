@@ -6,58 +6,88 @@ body.path-frontpage {
   }
 }
 
-// Styles for Services Block on Homepage
+// Styles for Services Block on
 .block-views-blockservises-block-1 {
   margin-bottom: $gutterX;
+  margin-top: 92px;
 
   .view-content {
     text-align: center;
     text-transform: uppercase;
 
-    .view-content {
+    div:nth-child(2) {
+      margin-right: 13px;
     }
 
+    div:nth-child(3) {
+      margin-right: 5px;
+    }
 
-    .views-field-field-servise-image img {
-      display: block;
-      margin: 0 auto;
+    .views-row:first-child .views-field {
+      margin-right: 27px;
+    }
+
+    .views-field-field-servise-image {
+      img {
+        display: block;
+        margin: 10px auto;
+      }
     }
 
     .views-field-title {
       margin-top: $gutter;
       font-size: 1.5em;
+      font-weight: 300;
+      letter-spacing: -1.5px;
     }
 
     .views-field-body {
-      margin-top: 20px;
       color: $graytext;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 400;
+      margin-top: 5px;
+      padding: 0px 10px;
     }
 
-    .views-field-view-node a {
-      text-decoration: none;
-      padding: 7px;
-      background-color: $blue;
-      color: white;
-      font-weight: 300;
+    .views-field-view-node {
+      margin-top: 27px;
+
+      a {
+        text-decoration: none;
+        padding: 7px;
+        background-color: $blue;
+        color: white;
+        font-weight: 300;
+      }
     }
   }
 }
 
-// Styles for Projects Block on Homepage
+// Styles for Projects Block on
 .block-views-blockproject-block-1 {
   position: relative;
+  @include background-45deg-lines;
+
+  > h2 {
+    font-size: 28px;
+    letter-spacing: -1.5px;
+    margin-left: 15px;
+    margin-top: 104px;
+    font-weight: 300;
+  }
 
   .view-content {
     justify-content: space-between;
-
+    margin-top: 89px;
     .views-row {
       background-color: white;
       text-align: center;
       text-transform: uppercase;
-      height: 440px;
+      height: 443px;
       border-bottom: 1px solid $darkblue;
+      -webkit-box-shadow: 5px 5px 12px 0px rgba(189, 189, 189, 0.7);
+      -moz-box-shadow: 5px 5px 12px 0px rgba(189, 189, 189, 0.7);
+      box-shadow: 5px 5px 12px 0px rgba(189, 189, 189, 0.7);
 
       a {
         text-decoration: none;
@@ -67,7 +97,7 @@ body.path-frontpage {
         font-size: 1.6em;
         color: $darkblue;
         font-weight: 300;
-        margin-top: 20px;
+        margin-top: 31px;
       }
 
       .views-field-term-node-tid {
@@ -75,7 +105,7 @@ body.path-frontpage {
       }
 
       .views-field-view-node {
-        margin-top: 20px;
+        margin-top: $gutterS;
 
         a {
           padding: 8px;
@@ -103,24 +133,9 @@ body.path-frontpage {
     }
   }
 
-  .contextual-region {
-    position: relative;
-    margin-bottom: $gutterXXX;
-
-    &:after {
-      content: "";
-      background-image: url(../images/bc_proj.jpg);
-      position: absolute;
-      width: 154%;
-      top: -30px;
-      left: -27%;
-      height: 135%;
-      opacity: 0.35;
-      z-index: -2;
-    }
-  }
-
   nav {
+    margin-top: -55px;
+
     .page-link {
       border: 0px;
       border-top-left-radius: 50% !important;
@@ -132,6 +147,10 @@ body.path-frontpage {
       background-color: #dddcdd !important;
       border-color: #dddcdd !important;
       border-radius: 50%;
+    }
+
+    ul.pagination{
+      gap: 10px;
     }
 
     ul a {
@@ -148,7 +167,251 @@ body.path-frontpage {
   }
 }
 
-// Styles for Block with team members on Homepage
+// Styles for Block with team members
 .block-views-blockour-team-block-1 {
+  margin-top: 227px;
 
+  .view-content{
+    margin-top: 32px;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    .views-row{
+      text-align: center;
+    }
+
+    .views-field-title{
+      margin-top: 31px;
+      a{
+        text-decoration: none;
+        color: $darkblue;
+        font-size: 25px;
+        letter-spacing: -2px;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    .views-field-body{
+      margin-top: -5px;
+      div{
+        font-size: 12px;
+        color: $graytext;
+      }
+    }
+
+    .views-field-view-node{
+      margin-top: 18px;
+      a{
+        background-color: $darkblue;
+        padding: 7px;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .views-field-field-social-media-links{
+      float: left;
+      padding: 22px;
+      margin-left: $gutterS;
+      ul{
+        font-size: 0.8em;
+      }
+    }
+
+    .views-field-link-flag{
+      margin-top: 25px;
+      a{
+        font-size: 16px;
+        color: $graytext;
+        i.fa{
+          color: lightcoral;
+        }
+      }
+      .ajax-progress{
+        display: none;
+      }
+    }
+  }
+
+}
+
+//Styles for News block
+.block-views-blocknews-block-1{
+  margin-top: 160px;
+  position: relative;
+  margin-bottom: 97px;
+    &:after {
+      content: "";
+      background-image: url(../images/bc_proj.jpg);
+      position: absolute;
+      width: 154%;
+      top: 62px;
+      left: -27%;
+      height: 102%;
+      opacity: 0.35;
+      z-index: -2;
+    }
+
+  .form--inline{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 43px;
+    div{
+      margin: 0;
+    }
+    input[type="text"]{
+      width: 340px;
+      margin-right: 5px;
+    }
+  }
+
+  .view-content{
+    margin-top: 10px;
+    gap: $gutterS;
+
+    .views-row{
+      background-color: white;
+      padding: $gutterS;
+      text-transform: uppercase;
+      position: relative;
+      width: 50%;
+      height: 295px;
+    }
+
+    .views-field-field-author-image,
+    .views-field-field-seat,
+    .views-field-field-author-name,
+    .views-field-field-profession{
+      float: left;
+      font-size: 12px;
+      margin: -1px 3px;
+    }
+
+    .views-field-created-1{
+      text-align: right;
+      font-size: 12px;
+      color: $graytext;
+      font-family: 'LatoWeb';
+    }
+
+    .views-field-created{
+      float: left;
+      margin-right: $gutterS;
+      position: relative;
+      margin-top: -3px;
+      .field-content{
+        display: flex;
+        flex-direction: column;
+        span{
+        }
+        .month{
+          text-transform: uppercase;
+          font-size: 26px;
+          color: $darkblue;
+          font-family: 'LatoWeb';
+          font-weight: 300;
+        }
+        .day{
+          font-size: 47px;
+          margin-top: -24px;
+          font-weight: 600;
+          color: $blue;
+        }
+        .year{
+          text-align: center;
+          color: $graytext;
+          margin-top: -17px;
+
+        }
+      }
+    }
+
+    .views-field-field-author-image{
+      img{
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .views-field-title{
+      clear: both;
+      margin-top: 74px;
+      a{
+        text-decoration: none;
+        color: $darkblue;
+        font-size: 26px;
+        margin-left: 8px;
+        letter-spacing: -0.2px;
+      }
+    }
+
+    .views-field-body{
+      p{
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 9px;
+        margin-left: 9px;
+        text-align: justify;
+        letter-spacing: -1.1px;
+      }
+    }
+
+    .views-field-title,
+    .views-field-body,
+    .views-field-view-node{
+      margin-left: 71px;
+      border-left: 1px solid $silver;
+      padding-left: 10px;
+    }
+
+    .views-field-field-author-image{
+      border-left: 1px solid $silver;
+      padding-left: 19px;
+      margin-left: -2px;
+      margin-top: 4px;
+    }
+
+    .views-field-field-seat{
+      color: $graytext;
+    }
+
+    .views-field-field-author-name{
+      color: $darkblue;
+
+    }
+
+    .views-field-field-profession{
+      color: $blue;
+      position: relative;
+      .field-content{
+          margin-left: 2.5px;
+      }
+      &:before{
+        content: '/';
+        float: left;
+        position: absolute;
+        left: -5px;
+      }
+    }
+    .views-field-view-node{
+      text-align: right;
+      margin-top: 13px;
+      margin-right: 4px;
+      a{
+        text-decoration: none;
+        padding: 7px 10px;
+        background-color: $blue;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+//Styles Clients Block
+.block-views-blockclients-block-1{
+  margin-bottom: 170px;
 }

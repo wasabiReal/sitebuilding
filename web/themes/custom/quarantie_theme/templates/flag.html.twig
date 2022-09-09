@@ -1,0 +1,25 @@
+{% spaceless %}
+  {# Attach the flag CSS library. #}
+  {{ attach_library('flag/flag.link') }}
+
+  {# Depending on the flag action, set the appropriate action class. #}
+  {% if action == 'flag' %}
+    {% set action_class = 'action-flag' %}
+    {% set icon_class = 'far fa-heart' %}
+  {% else %}
+    {% set action_class = 'action-unflag' %}
+    {% set icon_class = 'fa fa-heart' %}
+  {% endif %}
+
+  {# Set the remaining Flag CSS classes. #}
+  {% set classes = [
+    'flag',
+    'flag-' ~ flag.id()|clean_class,
+    'js-flag-' ~ flag.id()|clean_class ~ '-' ~ flaggable.id(),
+    action_class
+  ] %}
+
+  {# Set nofollow to prevent search bots from crawling anonymous flag links #}
+  {% set attributes = attributes.setAttribute('rel', 'nofollow') %}
+  <div class="{{ classes|join(' ') }}"><a{{ attributes }}><i class="{{ icon_class }}" aria-hidden="true"></i></a></div>
+{% endspaceless %}
