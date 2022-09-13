@@ -17,7 +17,7 @@
   font-style: normal;
 }
 
-// My files styles
+// My style-files
 @import "variables";
 @import "mixins.scss";
 @import "header.scss";
@@ -29,6 +29,17 @@
 @import "homepage.scss";
 @import "services.scss";
 @import "ourteam.scss";
+@import "news.scss";
+@import "clients.scss";
+
+//Adaptive
+@import "adaptive2560.scss";
+@import "adaptive1920.scss";
+@import "adaptive1440.scss";
+@import "adaptive1024.scss";
+@import "adaptive768.scss";
+@import "adaptive425.scss";
+
 
 body{
   color: black;

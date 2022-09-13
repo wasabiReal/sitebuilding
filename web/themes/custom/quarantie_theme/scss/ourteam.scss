@@ -1,4 +1,7 @@
 body.path-team{
+
+  @include page-title;
+
   .view-content{
     display: flex;
     flex-direction: column;
@@ -41,4 +44,26 @@ body.path-team{
       }
     }
   }
+}
+body.page-node-type-our-team{
+
+  @include page-title;
+
+  .node__content{
+    margin-top: $gutter;
+    text-align: justify;
+
+    .block-field-blocknodeour-teamfield-teammember-image{
+      float: left;
+      img{
+        margin-right: $gutter;
+      }
+    }
+
+    .block-field-blocknodeour-teamfield-social-media-links{
+      text-align: center;
+      padding: $gutter;
+    }
+  }
+
 }

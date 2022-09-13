@@ -8,7 +8,7 @@ body.path-frontpage {
 
 // Styles for Services Block on
 .block-views-blockservises-block-1 {
-  margin-bottom: $gutterX;
+  margin-bottom: 107px;
   margin-top: 92px;
 
   .view-content {
@@ -238,7 +238,7 @@ body.path-frontpage {
 
 //Styles for News block
 .block-views-blocknews-block-1{
-  margin-top: 160px;
+  margin-top: 163px;
   position: relative;
   margin-bottom: 97px;
     &:after {
@@ -256,7 +256,7 @@ body.path-frontpage {
   .form--inline{
     display: flex;
     justify-content: flex-start;
-    margin-top: 43px;
+    margin-top: 40px;
     div{
       margin: 0;
     }
@@ -285,7 +285,7 @@ body.path-frontpage {
     .views-field-field-profession{
       float: left;
       font-size: 12px;
-      margin: -1px 3px;
+      margin: 0px 3px;
     }
 
     .views-field-created-1{
@@ -337,7 +337,7 @@ body.path-frontpage {
     .views-field-title{
       clear: both;
       margin-top: 74px;
-      a{
+      span{
         text-decoration: none;
         color: $darkblue;
         font-size: 26px;
@@ -347,6 +347,8 @@ body.path-frontpage {
     }
 
     .views-field-body{
+      margin-top: -10px;
+      padding-top: 6px;
       p{
         margin: 0;
         font-size: 12px;
@@ -397,7 +399,8 @@ body.path-frontpage {
     }
     .views-field-view-node{
       text-align: right;
-      margin-top: 13px;
+      padding-top: 14px;
+      padding-right: 2px;
       margin-right: 4px;
       a{
         text-decoration: none;
@@ -413,5 +416,5 @@ body.path-frontpage {
 
 //Styles Clients Block
 .block-views-blockclients-block-1{
-  margin-bottom: 170px;
+  margin-bottom: 150px;
 }

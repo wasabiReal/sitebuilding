@@ -25,3 +25,4 @@
 # Ignore .env files as they are personal
 /.env
 /web/themes/custom/quarantie_theme/node_modules/
+/web/themes/custom/quarantie_theme/dist/

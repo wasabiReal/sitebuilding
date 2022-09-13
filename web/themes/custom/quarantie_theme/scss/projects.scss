@@ -1,4 +1,7 @@
 body.path-projects{
+
+  @include page-title;
+
   .view-project{
     text-align: center;
     .view-content{
@@ -63,6 +66,39 @@ body.path-projects{
         .views-field-term-node-tid a[href$='10'] {
           color: #e84c3d;
         }
+      }
+    }
+  }
+}
+body.page-node-type-projects{
+
+  @include page-title;
+  .node__content{
+    margin: $gutter 0;
+    position: relative;
+    .text-formatted{
+      text-align: justify;
+      font-size: 1.2em;
+      color: $darkblue;
+    }
+
+    img{
+      float: left;
+      margin-right: $gutter;
+      margin-bottom: $gutterX;
+    }
+  }
+
+  .block-field-blocknodeprojectsfield-servise{
+    .field{
+      position: absolute;
+      top: 310px;
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 1.5em;
+
       }
     }
   }

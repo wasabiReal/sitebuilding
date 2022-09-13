@@ -1,5 +1,9 @@
+body{
+  overflow-x: hidden;
+}
+
 main{
-  margin-top: 20px;
+  margin: $gutterS 0;
 }
 .region-content{
   width: $wrap;
@@ -11,4 +15,11 @@ h2{
 .view-content{
   display: flex;
   margin: 82px 0;
+}
+
+.views-field-view-node{
+  span:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
 }

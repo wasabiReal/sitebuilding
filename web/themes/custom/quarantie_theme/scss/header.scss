@@ -97,7 +97,7 @@
 header {
   width: 100%;
   background-image: url("../images/header.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-color: #CDD8C7;
   height: 710px;
   background-position: -7px 8px;
@@ -152,16 +152,17 @@ header {
   }
 }
 
-.navbar .block-search form {
+.navbar .block-views-exposed-filter-blocksearch-page-page-1 form {
   text-align: left;
 }
 
 #block-sociallinks {
-  margin-right: 14px;
+  //margin-right: 14px;
   padding: 4px 0;
+  margin: auto 14px auto 0;
 }
 
-.navbar .block-search form .form-actions {
+.navbar .block-views-exposed-filter-blocksearch-page-page-1 form .form-actions {
   margin-left: 0;
 }
 
@@ -171,35 +172,57 @@ header {
   gap: 11px;
 }
 
-.search-block-form {
+.block-views-exposed-filter-blocksearch-page-page-1 {
   margin: 0;
   padding: 0;
 
-  input, div#edit-actions {
-    margin: 0;
-    margin-left: 0px;
-    border-radius: 0;
-    height: 39px;
+  label {
+    display: none;
   }
 
-  input {
-    width: 173px;
-  }
+  form#views-exposed-form-search-page-page-1 {
+    div.form--inline,
+    div.form-actions{
+      display: flex;
 
-  div.form-actions.js-form-wrapper {
-    input {
-      background-color: transparent;
-      border: 1px solid $silver;
-      border-left: none;
-      width: 37px;
-      background-image: url("../images/lupa.png");
-      background-position: center;
-      padding: 0;
-      font-size: 0;
-
-      &:hover {
-        background-size: 36px;
+      .form-type-textfield {
+        margin: auto 0;
       }
     }
+    .js-form-type-textfield{
+      margin: auto;
+    }
+    #block-sociallinks{
+      margin: auto;
+    }
   }
+
+input, div#edit-actions--2 {
+  margin: 0;
+  border-radius: 0;
+  height: 39px;
+}
+
+input {
+  width: 173px;
+}
+
+div#edit-actions--2,
+div#edit-actions,{
+  input {
+    background-color: transparent;
+    border: 1px solid $silver;
+    border-left: none;
+    width: 37px;
+    background-image: url("../images/lupa.png");
+    background-position: center;
+    padding: 0;
+    font-size: 0;
+
+    &:hover {
+      background-size: 36px;
+    }
+  }
+}
+
 }
