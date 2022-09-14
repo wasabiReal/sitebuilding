@@ -1,0 +1,125 @@
+@media (max-width: 550px) {
+
+  .view-about-block > .view-content > .views-row .views-field-title{
+    margin-right: 20px;
+  }
+
+  .view-about-block > .view-content > .views-row .views-field-body{
+    width: 90%;
+  }
+
+  header .region-nav-additional{
+    display: none;
+  }
+  body.page-node-type-our-team .node__content .block-field-blocknodeour-teamfield-teammember-image{
+    float: initial;
+  }
+
+  body.path-news main .form--inline input[type=text]{
+    width: 90%;
+  }
+
+  header .creativity{
+    width: 80%;
+    left: 5%;
+    top: 40%;
+    p:nth-child(1){
+      font-size: 3.5em;
+    }
+    p:nth-child(2){
+      font-size: 2em;
+      height: auto;
+    }
+    p:nth-child(3){
+      font-size: 0.8em;
+    }
+  }
+
+  main .region-content .block-views-blocknews-block-1 .view-content .views-row{
+    width: 100%;
+  }
+
+  .view-about-block{
+    display: flex;
+    flex-direction: column;
+    .views-row{
+      display: flex;
+      flex-direction: column;
+      .views-field{
+        justify-content: center;
+      }
+    }
+  }
+
+  .view-about-block > .view-content > .views-row .views-field-view-node{
+    margin: auto 0 !important;
+    a{
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+
+  body.page-node-type-about-block h1{
+    @include before-after-for-h(20%)
+  }
+
+  body.path-frontpage h2{
+    @include before-after-for-h(30%);
+  }
+
+  main .region-content .view-content{
+    grid-template-columns: 1fr !important;
+
+    .views-field{
+      margin: 10px 0!important;
+      position: initial;
+      text-align: center;
+    }
+
+    .view-servises .views-field-body{
+      padding: 0 80px;
+    }
+  }
+  .view-filters{
+    width: 70%;
+    margin: auto;
+  }
+
+  .views-field-field-profession,
+  .views-field-field-seat{
+    display: none;
+  }
+
+  .block-views-blocknews-block-1 .form--inline input[type=text]{
+    width: 100%;
+  }
+  main .region-content .view-content .views-row{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body.page-node-type-projects .node__content img{
+    float: initial;
+  }
+  body.path-news .view-content .views-row{
+    height: auto;
+  }
+  footer{
+    height: auto;
+
+    .region-footer{
+      flex-direction: column;
+      height: auto;
+
+      .navbar-brand{
+        justify-content: center;
+      }
+
+      #block-socialmedialinks{
+        text-align: center;
+      }
+    }
+  }
+
+}

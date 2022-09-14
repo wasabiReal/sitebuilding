@@ -19,17 +19,17 @@
   }
 }
 
-@mixin background-45deg-lines {
+@mixin background-45deg-lines ($width: 154%, $left: -27%, $mb: 200px){
   position: relative;
-  margin-bottom: $gutterXXX;
+  margin-bottom: $mb;
 
   &:after {
     content: "";
     background-image: url(../images/bc_proj.jpg);
     position: absolute;
-    width: 154%;
+    width: $width;
     top: 50px;
-    left: -27%;
+    left: $left;
     height: 113%;
     opacity: 0.35;
     z-index: -2;

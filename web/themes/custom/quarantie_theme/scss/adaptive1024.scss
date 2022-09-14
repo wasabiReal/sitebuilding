@@ -1,0 +1,158 @@
+@media (max-width: 1024px) {
+
+  body.path-frontpage {
+    h2 {
+      text-align: center;
+      @include before-after-for-h(41%) ;
+    }
+  }
+  body.page-node-type-about-block {
+    main {
+      .block-page-title-block {
+        h1 {
+          font-weight: 600;
+          font-size: 2.69em;
+          @include before-after-for-h(40%) ;
+        }
+      }
+    }
+  }
+
+  header .navbar {
+    max-width: 1024px;
+    padding: 0 30px;
+
+    .navbar-collapse {
+      padding: 0 18px;
+    }
+
+
+
+    .region-nav-main ul {
+      gap: 0;
+
+      a {
+        padding-left: 0;
+      }
+    }
+
+    .block-views-exposed-filter-blocksearch-page-page-1 input:not([type="submit"]) {
+      width: 120px;
+      margin: auto;
+    }
+
+    .text-formatted {
+      gap: 6px;
+    }
+
+    #block-sociallinks {
+      padding: 7px 0;
+      margin: auto;
+    }
+
+    .views-exposed-form-search-page-page-1 {
+      .js-form-type-textfield {
+        margin: auto;
+      }
+    }
+  }
+  body.path-node,
+  body.path-projects,
+  body.path-services,
+  body.path-team,
+  body.path-news,
+  body.path-clients{
+    main {
+      margin-top: 50px;
+    }
+  }
+  main {
+    max-width: 100%;
+    margin: auto;
+
+    .region-content {
+      max-width: 100%;
+
+      .view-content {
+        max-width: 100%;
+      }
+
+      .view-about-block .views-field-body {
+        width: 50%;
+        text-align: justify;
+      }
+
+      .block-views-blockabout-block-block-1 {
+        margin: 0 30px;
+      }
+
+      .block-views-blockservises-block-1 .view-content {
+
+        @include grid1f1fr;
+
+        .views-field {
+          margin: 0;
+        }
+
+        .views-field-body {
+          padding: 0 100px;
+        }
+      }
+
+      .block-views-blockproject-block-1 .view-content {
+        @include grid1f1fr;
+
+        .views-row {
+          width: 75%;
+          margin: auto;
+        }
+      }
+
+      .block-views-blockour-team-block-1 .view-content {
+
+        @include grid1f1fr;
+
+        .views-row {
+          width: 75%;
+          margin: auto;
+        }
+
+        .views-field-link-flag {
+          text-align: end;
+          margin-right: 50px;
+
+          i {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .block-views-blocknews-block-1 {
+
+        .form--inline {
+          margin-left: 10%;
+        }
+
+        .view-content {
+
+          display: grid;
+
+          .views-row {
+            width: 80%;
+            margin: auto;
+
+            .views-field-body {
+              p {
+                font-size: 14px;
+                letter-spacing: -0.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer .region-footer {
+    max-width: 1024px;
+  }
+}

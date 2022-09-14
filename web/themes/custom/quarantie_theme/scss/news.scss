@@ -1,0 +1,199 @@
+body.path-news{
+
+  @include page-title;
+
+  main .form--inline{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 43px;
+    div{
+      margin: 0;
+    }
+    input[type="text"]{
+      width: 340px;
+      margin-right: 5px;
+    }
+  }
+
+  .view-content{
+    margin-top: 10px;
+    flex-direction: column;
+
+    .views-row{
+      background-color: white;
+      text-transform: uppercase;
+      position: relative;
+      width: 100%;
+      height: 140px;
+    }
+
+    .views-field-field-author-image,
+    .views-field-field-seat,
+    .views-field-field-author-name,
+    .views-field-field-profession{
+      float: left;
+      font-size: 12px;
+      margin: 3px 3px;
+    }
+
+    .views-field-created-1{
+      text-align: right;
+      font-size: 12px;
+      color: $graytext;
+      font-family: 'LatoWeb';
+    }
+
+    .views-field-created{
+      float: left;
+      margin-right: $gutterS;
+      position: relative;
+      margin-top: -3px;
+      .field-content{
+        display: flex;
+        flex-direction: column;
+        span{
+        }
+        .month{
+          text-transform: uppercase;
+          font-size: 26px;
+          color: $darkblue;
+          font-family: 'LatoWeb';
+          font-weight: 300;
+        }
+        .day{
+          font-size: 47px;
+          margin-top: -24px;
+          font-weight: 600;
+          color: $blue;
+        }
+        .year{
+          text-align: center;
+          color: $graytext;
+          margin-top: -17px;
+
+        }
+      }
+    }
+
+    .views-field-field-author-image{
+      img{
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    .views-field-title{
+      clear: both;
+      margin-top: 50px;
+      span{
+        text-decoration: none;
+        color: $darkblue;
+        font-size: 26px;
+        margin-left: 8px;
+        letter-spacing: -0.2px;
+      }
+    }
+
+    .views-field-body{
+      margin-top: -10px;
+      padding-top: 10px;
+
+      p{
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.3;
+        margin-top: 9px;
+        margin-left: 9px;
+        text-align: justify;
+        letter-spacing: -0.5px;
+        text-transform: initial;
+        color: $darkblue;
+      }
+    }
+
+    .views-field-title,
+    .views-field-body,
+    .views-field-view-node{
+      margin-left: 71px;
+      border-left: 1px solid $silver;
+      padding-left: 10px;
+    }
+
+    .views-field-field-author-image{
+      border-left: 1px solid $silver;
+      padding-left: 19px;
+      margin-left: -2px;
+      margin-top: 4px;
+    }
+
+    .views-field-field-seat{
+      color: $graytext;
+    }
+
+    .views-field-field-author-name{
+      color: $darkblue;
+
+    }
+
+    .views-field-field-profession{
+      color: $blue;
+      position: relative;
+      .field-content{
+        margin-left: 2.5px;
+      }
+      &:before{
+        content: '/';
+        float: left;
+        position: absolute;
+        left: -5px;
+      }
+    }
+    .views-field-view-node{
+      text-align: right;
+      padding-top: 13px;
+      margin-right: 4px;
+      a{
+        text-decoration: none;
+        padding: 7px 10px;
+        background-color: $blue;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+body.page-node-type-news{
+
+  @include page-title;
+
+  .node__content{
+    margin-top: $gutter;
+  }
+
+  .block-field-blocknodenewsfield-author-image{
+    float: left;
+    margin-right: $gutter;
+    img{
+      margin-bottom: 30px;
+    }
+  }
+
+  .block-field-blocknodenewscreated{
+    text-align: end;
+    font-size: 0.8em;
+    color: $blue;
+    margin-top: 85px;
+  }
+
+  .block-field-blocknodenewsfield-author-name{
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+
+  .block-field-blocknodenewsbody{
+    text-align: justify;
+    font-size: 1.1em;
+  }
+
+}

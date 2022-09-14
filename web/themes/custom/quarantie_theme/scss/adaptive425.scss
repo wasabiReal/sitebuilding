@@ -1,0 +1,9 @@
+@media (max-width: 425px) {
+  body.page-node-type-about-block h1{
+    @include before-after-for-h(20%)
+  }
+
+  body.path-frontpage h2{
+    @include before-after-for-h(30%);
+  }
+}

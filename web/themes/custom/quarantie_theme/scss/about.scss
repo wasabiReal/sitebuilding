@@ -71,7 +71,6 @@
         font-size: 2.69em;
         @include before-after-for-h ;
       }
-
     }
 
     .node__content p{
@@ -84,6 +83,8 @@
     img{
       margin-right: $gutter;
       margin-bottom: 15px;
+      width: 100%;
+      height: 100%;
     }
     .block-system-main-block{
       margin-top: $gutter;

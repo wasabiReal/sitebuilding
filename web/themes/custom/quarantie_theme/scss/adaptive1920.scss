@@ -1,0 +1,26 @@
+@media (max-width: 1920px) {
+  body {
+    max-width: 1920px;
+  }
+  main{
+    .region-content{
+      max-width: 100%;
+    }
+  }
+  header {
+    .creativity {
+      position: absolute;
+      top: 360px;
+      left: 447px;
+      width: 350px;
+    }
+  }
+  .block-views-blockproject-block-1 {
+    position: relative;
+    @include background-45deg-lines(100%, 0%);
+  }
+  .block-views-blocknews-block-1 {
+    position: relative;
+    @include background-45deg-lines(100%, 0%, 97px);
+  }
+}

@@ -1,0 +1,154 @@
+@media (max-width: 990px) {
+
+  body {
+    max-width: 100%;
+
+    main .region-content,
+    .layout__region--content {
+      max-width: 100%;
+    }
+  }
+
+  body.path-projects .view-project .view-content {
+    grid-template-columns: 1fr 1fr;
+
+    .views-row {
+      margin: auto;
+      max-width: 90%;
+    }
+  }
+
+  header nav.navbar {
+    max-width: 100%;
+    z-index: 22;
+    padding: 0;
+    margin: 0;
+
+    .region-nav-additional {
+      justify-content: space-around;
+
+      #block-sociallinks {
+        margin: 0;
+      }
+
+      .block-views-exposed-filter-blocksearch-page-page-1 {
+        input[type='text'] {
+          width: 300px;
+        }
+      }
+    }
+
+    .d-flex {
+      background-color: $darkblue;
+    }
+
+    .navbar-toggler {
+      background-color: $darkblue;
+      border: 0;
+    }
+  }
+
+  header .navbar .region-nav-branding {
+    margin-left: 5%;
+  }
+
+  header .navbar .navbar-toggler {
+    margin-right: 5%;
+
+    &:focus {
+      outline: 0 !important;
+      box-shadow: initial;
+    }
+  }
+
+  header .navbar .region-nav-main {
+
+    ul a {
+      color: black !important;
+    }
+
+    ul li:first-child {
+      display: none;
+    }
+  }
+
+  main {
+    .block-views-blocknews-block-1 .view-content {
+      gap: 50px;
+
+      .views-row {
+        height: auto;
+      }
+    }
+
+    .region-content {
+      .view-about-block {
+        .views-field-body {
+          width: 55%;
+        }
+
+        .views-field-view-node {
+          span {
+            height: 60px;
+          }
+        }
+      }
+
+      .block-views-blockservises-block-1 .view-servises {
+        .views-field-field-servise-image {
+          max-height: 118px;
+        }
+
+        .views-field-body {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  body.page-node-type-page {
+
+    .block-webform-block {
+      margin: 0 5vw;
+      float: initial;
+
+
+
+      #edit-actions{
+        display: flex;
+      }
+
+      form {
+        margin: auto;
+        width: fit-content;
+        input{
+          margin: auto;
+        }
+      }
+    }
+
+    .block-block-content8afd7301-1763-4168-a134-4ecece229500 .gmap_canvas{
+      width: 100%;
+    }
+
+    .block-webform-block input:not([type=submit]), .block-webform-block textarea {
+      width: 290px;
+    }
+
+    .block-block-content {
+      margin-left: 0;
+      height: 500px;
+
+      .mapouter{
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+      }
+    }
+  }
+
+  footer .region-footer {
+    max-width: 100%;
+  }
+
+}

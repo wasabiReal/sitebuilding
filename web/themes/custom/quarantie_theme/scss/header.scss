@@ -109,6 +109,12 @@ header {
     margin-top: 48px;
     padding: 0 10px;
 
+    .region-nav-main {
+
+      ul a {
+        color: black !important;
+      }
+    }
     > div {
       display: flex;
       justify-content: space-between;
@@ -197,7 +203,7 @@ header {
     }
   }
 
-input, div#edit-actions--2 {
+input, div#edit-actions--3, div#edit-actions--2, div#edit-actions--1 {
   margin: 0;
   border-radius: 0;
   height: 39px;
@@ -207,8 +213,10 @@ input {
   width: 173px;
 }
 
+div#edit-actions--3,
+div#edit-actions,
 div#edit-actions--2,
-div#edit-actions,{
+div#edit-actions--1{
   input {
     background-color: transparent;
     border: 1px solid $silver;
