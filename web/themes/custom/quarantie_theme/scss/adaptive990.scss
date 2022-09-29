@@ -106,6 +106,18 @@
     }
   }
 
+  body.page-node-type-projects{
+
+    .region-sidebar-second{
+      .views-view-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $gutter;
+      }
+    }
+
+  }
+
   body.page-node-type-page {
 
     .block-webform-block {

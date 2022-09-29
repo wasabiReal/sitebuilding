@@ -30,7 +30,6 @@ body.path-team{
       float: left;
     }
     .views-field-view-node{
-      //text-align: right;
       position: absolute;
       bottom: 10px;
       right: 0;
@@ -61,8 +60,8 @@ body.page-node-type-our-team{
     }
 
     .block-field-blocknodeour-teamfield-social-media-links{
-      text-align: center;
-      padding: $gutter;
+
+      padding-top: 50px;
     }
   }
 

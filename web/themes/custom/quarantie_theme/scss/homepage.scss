@@ -79,6 +79,7 @@ body.path-frontpage {
   .view-content {
     justify-content: space-between;
     margin-top: 89px;
+
     .views-row {
       background-color: white;
       text-align: center;
@@ -115,19 +116,19 @@ body.path-frontpage {
         }
       }
 
-      .views-field-term-node-tid a[href$='7'] {
+      .views-field-term-node-tid a[href^='/web'] {
         color: #1bbc9b;
       }
 
-      .views-field-term-node-tid a[href$='8'] {
+      .views-field-term-node-tid a[href^='/php'] {
         color: #9b58b5;
       }
 
-      .views-field-term-node-tid a[href$='9'] {
+      .views-field-term-node-tid a[href^='/app'] {
         color: #32ade1;
       }
 
-      .views-field-term-node-tid a[href$='10'] {
+      .views-field-term-node-tid a[href^='/drupal'] {
         color: #e84c3d;
       }
     }
@@ -149,7 +150,7 @@ body.path-frontpage {
       border-radius: 50%;
     }
 
-    ul.pagination{
+    ul.pagination {
       gap: 10px;
     }
 
@@ -171,18 +172,19 @@ body.path-frontpage {
 .block-views-blockour-team-block-1 {
   margin-top: 227px;
 
-  .view-content{
+  .view-content {
     margin-top: 32px;
     justify-content: space-between;
     text-transform: uppercase;
 
-    .views-row{
+    .views-row {
       text-align: center;
     }
 
-    .views-field-title{
+    .views-field-title {
       margin-top: 31px;
-      a{
+
+      a {
         text-decoration: none;
         color: $darkblue;
         font-size: 25px;
@@ -191,17 +193,19 @@ body.path-frontpage {
       }
     }
 
-    .views-field-body{
+    .views-field-body {
       margin-top: -5px;
-      div{
+
+      div {
         font-size: 12px;
         color: $graytext;
       }
     }
 
-    .views-field-view-node{
+    .views-field-view-node {
       margin-top: 18px;
-      a{
+
+      a {
         background-color: $darkblue;
         padding: 7px;
         font-size: 14px;
@@ -210,25 +214,29 @@ body.path-frontpage {
       }
     }
 
-    .views-field-field-social-media-links{
+    .views-field-field-social-media-links {
       float: left;
       padding: 22px;
       margin-left: $gutterS;
-      ul{
+
+      ul {
         font-size: 0.8em;
       }
     }
 
-    .views-field-link-flag{
+    .views-field-link-flag {
       margin-top: 25px;
-      a{
+
+      a {
         font-size: 16px;
         color: $graytext;
-        i.fa{
+
+        i.fa {
           color: lightcoral;
         }
       }
-      .ajax-progress{
+
+      .ajax-progress {
         display: none;
       }
     }
@@ -237,40 +245,43 @@ body.path-frontpage {
 }
 
 //Styles for News block
-.block-views-blocknews-block-1{
+.block-views-blocknews-block-1 {
   margin-top: 163px;
   position: relative;
   margin-bottom: 97px;
-    &:after {
-      content: "";
-      background-image: url(../images/bc_proj.jpg);
-      position: absolute;
-      width: 154%;
-      top: 62px;
-      left: -27%;
-      height: 102%;
-      opacity: 0.35;
-      z-index: -2;
-    }
 
-  .form--inline{
+  &:after {
+    content: "";
+    background-image: url(../images/bc_proj.jpg);
+    position: absolute;
+    width: 154%;
+    top: 62px;
+    left: -27%;
+    height: 102%;
+    opacity: 0.35;
+    z-index: -2;
+  }
+
+  .form--inline {
     display: flex;
     justify-content: flex-start;
     margin-top: 40px;
-    div{
+
+    div {
       margin: 0;
     }
-    input[type="text"]{
+
+    input[type="text"] {
       width: 340px;
       margin-right: 5px;
     }
   }
 
-  .view-content{
+  .view-content {
     margin-top: 10px;
     gap: $gutterS;
 
-    .views-row{
+    .views-row {
       background-color: white;
       padding: $gutterS;
       text-transform: uppercase;
@@ -282,43 +293,48 @@ body.path-frontpage {
     .views-field-field-author-image,
     .views-field-field-seat,
     .views-field-field-author-name,
-    .views-field-field-profession{
+    .views-field-field-profession {
       float: left;
       font-size: 12px;
       margin: 0px 3px;
     }
 
-    .views-field-created-1{
+    .views-field-created-1 {
       text-align: right;
       font-size: 12px;
       color: $graytext;
       font-family: 'LatoWeb';
     }
 
-    .views-field-created{
+    .views-field-created {
       float: left;
       margin-right: $gutterS;
       position: relative;
       margin-top: -3px;
-      .field-content{
+
+      .field-content {
         display: flex;
         flex-direction: column;
-        span{
+
+        span {
         }
-        .month{
+
+        .month {
           text-transform: uppercase;
           font-size: 26px;
           color: $darkblue;
           font-family: 'LatoWeb';
           font-weight: 300;
         }
-        .day{
+
+        .day {
           font-size: 47px;
           margin-top: -24px;
           font-weight: 600;
           color: $blue;
         }
-        .year{
+
+        .year {
           text-align: center;
           color: $graytext;
           margin-top: -17px;
@@ -327,17 +343,18 @@ body.path-frontpage {
       }
     }
 
-    .views-field-field-author-image{
-      img{
+    .views-field-field-author-image {
+      img {
         width: 80px;
         height: 80px;
       }
     }
 
-    .views-field-title{
+    .views-field-title {
       clear: both;
       margin-top: 74px;
-      span{
+
+      span {
         text-decoration: none;
         color: $darkblue;
         font-size: 26px;
@@ -346,10 +363,11 @@ body.path-frontpage {
       }
     }
 
-    .views-field-body{
+    .views-field-body {
       margin-top: -10px;
       padding-top: 6px;
-      p{
+
+      p {
         margin: 0;
         font-size: 12px;
         line-height: 1.2;
@@ -362,47 +380,51 @@ body.path-frontpage {
 
     .views-field-title,
     .views-field-body,
-    .views-field-view-node{
+    .views-field-view-node {
       margin-left: 71px;
       border-left: 1px solid $silver;
       padding-left: 10px;
     }
 
-    .views-field-field-author-image{
+    .views-field-field-author-image {
       border-left: 1px solid $silver;
       padding-left: 19px;
       margin-left: -2px;
       margin-top: 4px;
     }
 
-    .views-field-field-seat{
+    .views-field-field-seat {
       color: $graytext;
     }
 
-    .views-field-field-author-name{
+    .views-field-field-author-name {
       color: $darkblue;
 
     }
 
-    .views-field-field-profession{
+    .views-field-field-profession {
       color: $blue;
       position: relative;
-      .field-content{
-          margin-left: 2.5px;
+
+      .field-content {
+        margin-left: 2.5px;
       }
-      &:before{
+
+      &:before {
         content: '/';
         float: left;
         position: absolute;
         left: -5px;
       }
     }
-    .views-field-view-node{
+
+    .views-field-view-node {
       text-align: right;
       padding-top: 14px;
       padding-right: 2px;
       margin-right: 4px;
-      a{
+
+      a {
         text-decoration: none;
         padding: 7px 10px;
         background-color: $blue;
@@ -415,6 +437,60 @@ body.path-frontpage {
 }
 
 //Styles Clients Block
-.block-views-blockclients-block-1{
-  margin-bottom: 150px;
+.block-views-blockclients-block-1 {
+  margin-bottom: 170px;
+}
+
+body.path-search-page {
+
+  @include page-title;
+
+  .view-content {
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: column;
+
+    .views-field-title {
+      margin: 10px 0;
+
+      span {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+    }
+
+    .views-field-body {
+      font-size: 1em;
+      color: black;
+      line-height: 1.3em;
+      p, h4{
+        margin: 0;
+      }
+      h4{
+        font-size: 1em;
+        font-weight: normal;
+      }
+    }
+
+    .views-field-view-node {
+      margin: 10px 0;
+      text-align: right;
+
+      span {
+        background-color: $blue;
+        padding: 5px;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          font-size: 1em;
+        }
+      }
+    }
+
+  }
 }

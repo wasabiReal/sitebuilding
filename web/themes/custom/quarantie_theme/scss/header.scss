@@ -98,9 +98,18 @@ header {
   width: 100%;
   background-image: url("../images/header.png");
   background-repeat: repeat-x;
-  background-color: #CDD8C7;
   height: 710px;
+  position: relative;
   background-position: -7px 8px;
+  &:before{
+    content: "";
+    background-color: #CDD8C7;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
   .navbar {
     display: block;

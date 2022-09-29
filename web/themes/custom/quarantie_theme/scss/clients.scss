@@ -2,4 +2,43 @@ body.path-clients{
 
   @include page-title;
 
+  .views-view-grid{
+    width: 100%;
+  }
+
+  .view-header{
+    padding: 20px 65px 0;
+  }
+
+  .view-content{
+    margin: 30px 0;
+  }
+
+  .views-row{
+    display: flex;
+    height: 150px;
+    text-align: center;
+    margin: $gutter 0;
+
+
+    .views-field-field-clients{
+      height: 100px;
+    }
+
+    .views-field-view-node{
+      margin: 10px 0;
+      span{
+        background-color: $blue;
+        padding: 5px;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 0.9em;
+      }
+    }
+  }
+
 }

@@ -2,6 +2,19 @@ body.path-services {
 
   @include page-title;
 
+  #block-views-block-services-count-block-1{
+    .view-content{
+      display: flex;
+      justify-content: space-between;
+
+      .views-row{
+        width: 20%;
+        padding: 0;
+        opacity: 0.4;
+      }
+    }
+  }
+
   .view-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,6 +61,48 @@ body.page-node-type-servises{
       text-align: justify;
       display: block;
       font-size: 1.3em;
+    }
+  }
+}
+
+body.path-taxonomy{
+
+  @include page-title;
+
+  .view-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+
+    .views-row{
+      margin: $gutter;
+      text-align: center;
+
+      .views-field-body{
+        text-align: justify;
+      }
+
+      .views-field-title{
+        margin-top: 10px;
+        font-size: 1.6em;
+        text-transform: uppercase;
+      }
+
+      .views-field-view-node{
+        margin-top: 10px;
+
+        span{
+          background-color: $blue;
+          padding: 5px;
+        }
+
+        a{
+          color: white;
+          font-size: 0.9em;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 

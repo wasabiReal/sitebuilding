@@ -1,4 +1,8 @@
-body.page-node-type-page{
+body.page-node-type-contact-us{
+
+  .block-field-blocknodecontact-usbody div.text-formatted{
+    display: flow-root;
+  }
 
   h1 {
     font-size: 1.5em;
@@ -42,9 +46,15 @@ body.page-node-type-page{
     height: 60px;
   }
 
-  .block-block-content8afd7301-1763-4168-a134-4ecece229500{
+  .block-field-blocknodecontact-usfield-contactus-map iframe{
+    margin: 20px;
+  }
+
+  .block-field-blocknodecontact-usbody div.field__item{
     margin-top: 20px;
     margin-left: 635px;
+    padding: 12px 4px;
+    line-height: 1.6;
 
     h4{
       text-transform: uppercase;
@@ -56,17 +66,10 @@ body.page-node-type-page{
       margin: 0;
       font-family: 'LatoWeb';
     }
-    .gmap_canvas{
-      margin-top: 31px;
-      overflow: hidden;
-      background: none!important;
-      width: 459px;
-      height: 250px;
-    }
-    .text-formatted{
-      padding: 12px 4px;
-      line-height: 1.6;
-      margin: 0;
+    a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
     }
   }
 }
