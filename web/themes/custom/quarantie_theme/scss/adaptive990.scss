@@ -61,6 +61,12 @@
     }
   }
 
+  .region-nav-main ul li a:hover:after{
+    content: '';
+    width: 0;
+    height: 0;
+  }
+
   header .navbar .region-nav-main {
 
     ul a {

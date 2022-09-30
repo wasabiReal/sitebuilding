@@ -20,7 +20,6 @@ body.path-clients{
     text-align: center;
     margin: $gutter 0;
 
-
     .views-field-field-clients{
       height: 100px;
     }
@@ -40,5 +39,10 @@ body.path-clients{
       }
     }
   }
+}
 
+body.page-node-type-clients{
+  .node__content{
+    text-align: center;
+  }
 }

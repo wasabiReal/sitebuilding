@@ -570,8 +570,21 @@ body.page-node-type-projects .block-page-title-block:after {
   opacity: 0.2;
   background-color: #373645;
 }
+body.page-node-type-projects .region-content {
+  width: 1470px;
+  margin: 0;
+  margin-left: auto;
+}
+body.page-node-type-projects .region-sidebar-second {
+  text-align: center;
+}
+body.page-node-type-projects .region-sidebar-second h2 {
+  font-size: 1.4em;
+}
 body.page-node-type-projects .region-sidebar-second .view-content {
-  margin: 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 body.page-node-type-projects .region-sidebar-second .view-content .views-row {
   margin: 10px auto;
@@ -597,6 +610,11 @@ body.page-node-type-projects .region-sidebar-second .view-content .views-row .vi
   font-size: 1em;
   color: white;
 }
+body.page-node-type-projects nav.pager li.pager__item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 body.page-node-type-projects .node__content {
   margin: 30px 0;
   position: relative;
@@ -620,6 +638,18 @@ body.page-node-type-projects .block-field-blocknodeprojectsfield-servise .field 
   text-transform: uppercase;
   color: #6e9bca;
   font-size: 1.5em;
+}
+body.page-node-type-projects .block-field-blocknodeprojectsfield-servise .field--type-entity-reference a[href^="/web"] {
+  color: #1bbc9b;
+}
+body.page-node-type-projects .block-field-blocknodeprojectsfield-servise .field--type-entity-reference a[href^="/php"] {
+  color: #9b58b5;
+}
+body.page-node-type-projects .block-field-blocknodeprojectsfield-servise .field--type-entity-reference a[href^="/app"] {
+  color: #32ade1;
+}
+body.page-node-type-projects .block-field-blocknodeprojectsfield-servise .field--type-entity-reference a[href^="/drupal"] {
+  color: #e84c3d;
 }
 
 body.page-node-type-contact-us .block-field-blocknodecontact-usbody div.text-formatted {
@@ -1785,6 +1815,10 @@ body.path-clients .views-row .views-field-view-node a {
   font-size: 0.9em;
 }
 
+body.page-node-type-clients .node__content {
+  text-align: center;
+}
+
 @media (max-width: 2560px) {
   header {
     background-position: center;
@@ -2108,6 +2142,11 @@ body .layout__region--content {
     -webkit-box-shadow: initial;
             box-shadow: initial;
   }
+  .region-nav-main ul li a:hover:after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
   header .navbar .region-nav-main ul a {
     color: black !important;
   }
@@ -2198,6 +2237,8 @@ body .layout__region--content {
   }
   body.page-node-type-our-team .node__content .block-field-blocknodeour-teamfield-teammember-image {
     float: initial;
+    text-align: center;
+    margin-bottom: 10px;
   }
   body.path-news main .form--inline input[type=text] {
     width: 90%;

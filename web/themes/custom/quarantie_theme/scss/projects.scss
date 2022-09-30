@@ -74,9 +74,23 @@ body.page-node-type-projects{
 
   @include page-title;
 
+  .region-content{
+    width: 1470px;
+    margin: 0;
+    margin-left: auto;
+  }
+
   .region-sidebar-second{
+
+    text-align: center;
+
+    h2{
+      font-size: 1.4em;
+    }
+
     .view-content{
-      margin: $gutter 0;
+      justify-content: center;
+
       .views-row{
         margin: 10px auto;
         .views-field-title{
@@ -102,6 +116,18 @@ body.page-node-type-projects{
       }
     }
   }
+
+  nav.pager{
+    li.pager__item{
+      a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+
+
 
   .node__content{
     margin: $gutter 0;
@@ -130,6 +156,21 @@ body.page-node-type-projects{
         font-size: 1.5em;
 
       }
+    }
+    .field--type-entity-reference a[href^='/web'] {
+      color: #1bbc9b;
+    }
+
+    .field--type-entity-reference a[href^='/php'] {
+      color: #9b58b5;
+    }
+
+    .field--type-entity-reference a[href^='/app'] {
+      color: #32ade1;
+    }
+
+    .field--type-entity-reference a[href^='/drupal'] {
+      color: #e84c3d;
     }
   }
 }
