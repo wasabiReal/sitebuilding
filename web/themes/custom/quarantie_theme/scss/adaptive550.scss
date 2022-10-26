@@ -41,6 +41,22 @@
     width: 100%;
   }
 
+  body.path-services #block-views-block-services-count-block-1 .view-content{
+    flex-direction: column;
+  }
+  body.path-services #block-views-block-services-count-block-1 .view-content .views-row{
+    width: 80%;
+  }
+  body.path-projects .view-project .view-content .views-row{
+    width: 90%;
+  }
+  body.page-node-type-projects .region-sidebar-second .views-view-grid{
+    grid-template-columns: initial;
+  }
+  body.page-node-type-projects .region-sidebar-second .view-content .views-row .views-field-title span{
+    padding: 15.55px;
+  }
+
   .view-about-block{
     display: flex;
     flex-direction: column;

@@ -155,4 +155,28 @@
   footer .region-footer {
     max-width: 1024px;
   }
+  body.page-node-type-contact-us .block-field-blocknodecontact-usbody{
+    width: max-content;
+    margin: auto;
+    div.field__item{
+      margin-left: 0;
+    }
+  }
+  body.page-node-type-contact-us {
+
+    .block-field-blocknodecontact-usfield-contactus-map{
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .block-webform-block{
+      float: initial;
+      margin-left: 0;
+      form{
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+      }
+    }
+  }
 }
